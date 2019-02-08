@@ -1,6 +1,6 @@
 def normal_pdf(x, mu=0, sigma=1):
-    # TODO
-    # hits: math.exp
+    nd = (1/(math.sqrt(2*math.pi*(sigma**2))))*math.exp(-((x-mu)**2)/(2*(sigma**2)))
+    return nd
 
 from matplotlib import pyplot as plt
 xs = [x / 10.0 for x in range(-50, 50)]
